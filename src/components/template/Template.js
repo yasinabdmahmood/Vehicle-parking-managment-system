@@ -19,19 +19,19 @@ function Template() {
             <Menu>
               <MenuItem component={<Link to="/home" />}>Dashboard</MenuItem>
               <SubMenu label="Vehicle Catagory">
-                <MenuItem>Add Category</MenuItem>
-                <MenuItem>Manage Category</MenuItem>
+                <MenuItem component={<Link to="/home/add_category" />}>Add Category</MenuItem>
+                <MenuItem component={<Link to="/home/manage_category" />}>Manage Category</MenuItem>
               </SubMenu>
               <MenuItem component={<Link to="/home/add_vehicle" />} > Add Vehicle </MenuItem>
               <SubMenu label="Manage Vehicle">
-                <MenuItem>Manage In Vehicle</MenuItem>
-                <MenuItem>Manage Out Vehicle</MenuItem>
+                <MenuItem component={<Link to="/home/manage_in_vehicle" />}>Manage In Vehicle</MenuItem>
+                <MenuItem component={<Link to="/home/manage_out_vehicle" />}>Manage Out Vehicle</MenuItem>
               </SubMenu>
               <SubMenu label="Reports">
-                <MenuItem>Between Dates Reports</MenuItem>
+                <MenuItem component={<Link to="/home/between_dates_report" />}>Between Dates Reports</MenuItem>
               </SubMenu>
-              <MenuItem> Search Vehicle </MenuItem>
-              <MenuItem> Reg Users </MenuItem>
+              <MenuItem component={<Link to="/home/search_vehicle" />}> Search Vehicle </MenuItem>
+              <MenuItem component={<Link to="/home/reg_user" />}> Reg Users </MenuItem>
             </Menu>
             <div className={styles['logo-container']}>
               <img src={logo}/>
