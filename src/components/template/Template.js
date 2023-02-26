@@ -38,10 +38,6 @@ function Template() {
             </div>
           </Sidebar>
           <div style={{flexGrow: '1'}}>
-            {/* <Routes>
-                <Route  path="/home/dashboard" element={<Dashboard />} />
-                <Route  path="/home/add_vehicle" element={<AddVehicle />} />
-            </Routes> */}
              <Outlet />
           </div>   
         </div>

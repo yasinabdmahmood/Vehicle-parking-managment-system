@@ -11,7 +11,6 @@ function Home() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-        {/* <Route path="/home" element={<Template />} /> */}
           <Route path="/home" element={<Template />}>
             <Route index element={<Dashboard/>} />
             <Route path="add_vehicle" element={<AddVehicle/>} />
